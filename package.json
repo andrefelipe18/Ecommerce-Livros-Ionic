@@ -24,6 +24,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "5.7.4"
+    "@capacitor/cli": "5.7.4",
+    "@nuxtjs/tailwindcss": "^6.11.4"
   }
 }

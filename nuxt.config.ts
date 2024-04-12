@@ -2,9 +2,10 @@
 export default defineNuxtConfig({
   // devtools: { enabled: true },
   ssr: false,
-  modules: ["@nuxtjs/ionic", "@pinia/nuxt"],
+  modules: ["@nuxtjs/ionic", "@pinia/nuxt", "@nuxtjs/tailwindcss"],
 
   pinia: {
-    storesDirs: ['./stores/**'],
+    storesDirs: ["./stores/**"],
   },
 });
+
