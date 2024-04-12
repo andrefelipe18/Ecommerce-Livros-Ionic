@@ -11,6 +11,11 @@ const addToWishList = (bookId: number) => {
 const removeFromWishList = (bookId: number) => {
     BooksStore.removeFromWishList(bookId);
 }
+
+const buy = (bookId: number) => {
+    BooksStore.removeFromWishList(bookId);
+    BooksStore.purchaseBook(bookId);
+}
 </script>
 <template>
     <ion-page>
@@ -37,7 +42,8 @@ const removeFromWishList = (bookId: number) => {
                                 class="font-[20px] text-[#FFD700]"></ion-icon>
                         </div>
                         <img :src="book.imageURL" alt="book image" width="100px" />
-                        <ion-button shape="round">Round</ion-button>
+                        <ion-button v-if="!book.isPurchased" @click="buy(book.id)" id="buy-book">Comprar esse livro</ion-button>
+                        <ion-button v-if="book.isPurchased" id="buy-book" disabled>Comprado!!</ion-button>
                     </div>
                 </ion-item>
             </ion-list>

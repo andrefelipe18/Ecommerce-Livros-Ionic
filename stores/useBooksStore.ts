@@ -8,7 +8,7 @@ interface Book {
   imageURL: string;
   inWishlist: boolean;
   isPurchased: boolean;
-  isFinished: false;
+  isFinished: boolean;
 }
 
 export const useBooksStore = defineStore("books", {
@@ -27,6 +27,27 @@ export const useBooksStore = defineStore("books", {
       const book = this.books.find((book) => book.id === bookId);
       if (book) {
         book.inWishlist = false;
+      }
+    },
+
+    purchaseBook(bookId: number) {
+      const book = this.books.find((book) => book.id === bookId);
+      if (book) {
+        book.isPurchased = true;
+      }
+    },
+
+    removeFromPurchase(bookId: number) {
+      const book = this.books.find((book) => book.id === bookId);
+      if (book) {
+        book.isPurchased = false;
+      }
+    },
+
+    finishBook(bookId: number) {
+      const book = this.books.find((book) => book.id === bookId);
+      if (book) {
+        book.isFinished = true;
       }
     },
   },
