@@ -9,9 +9,9 @@ Você foi contratado para desenvolver um aplicativo de venda de livros, onde osu
 # Requisitos
 
 - [] O aplicativo deve ter três telas principais:
-    - [] Tela de lista de desejos: exibirá uma lista dos livros desejadospelos usuários.
-    - [] ela de livros adquiridos pelo usuário: exibirá os livros já compradositens da lista selecionada, permitindo adicionar novos itens, marcar itens como concluídos e remover itens da lista.
-    - [] Tela de exibição de produtos: permitirá aos usuários visualizarprodutos disponíveis para compra.
+    - [] Tela de lista de desejos: exibirá uma lista dos livros desejados pelos usuários.
+    - [] Tela de livros adquiridos pelo usuário: exibirá os livros já compradositens da lista selecionada, permitindo adicionar novos itens, marcar itens como concluídos e remover itens da lista.
+    - [] Tela de exibição de produtos: permitirá aos usuários visualizar produtos disponíveis para compra.
 - [] Os dados dos produtos devem ser armazenados localmente no dispositivo.
 - [] O aplicativo deve usar componentes UI do Ionic para fornecer uma experiência de usuário atraente e responsiva.\
 
