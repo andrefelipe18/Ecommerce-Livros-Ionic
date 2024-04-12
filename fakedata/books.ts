@@ -34,7 +34,7 @@ let book3: Book = {
   rate: 2,
   imageURL:
     "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F-tz40y0OlrCc%2FVGfG-NmL_AI%2FAAAAAAAAAJg%2FJVArqytkaOE%2Fs1600%2F81Dd%252BimpKAL.jpg&f=1&nofb=1&ipt=7634b46fb47f6c56b7afe4822caddcf9e89d02690d20f5865419515a95848365&ipo=images",
-  inWishlist: false,
+  inWishlist: true,
 };
 
 let book4: Book = {
@@ -54,7 +54,7 @@ let book5: Book = {
   rate: 5,
   imageURL:
     "https://th.bing.com/th/id/OIP.T55C4BiOVfcS3WFdCM3xdwHaK2?rs=1&pid=ImgDetMain",
-  inWishlist: false,
+  inWishlist: true,
 };
 
 let book6: Book = {
@@ -83,7 +83,7 @@ let book8: Book = {
   author: "J.D. Salinger",
   rate: 4,
   imageURL:
-    "https://th.bing.com/th/id/R.cac52fbbefa83812774f681dbf874163?rik=v%2bHq2yBp%2f6RzYw&riu=http%3a%2f%2fmedia.npr.org%2fassets%2fbakertaylor%2fcovers%2fc%2fcatcher-in-the-rye%2f9780316769488_custom-b6fc2e108f3865eb320720875c20e4f869da8065-s6-c30.jpg&ehk=fpDBmQJbSuHhhoBl2AYOifBz0QLtjPI7FBgIYnU65cM%3d&risl=&pid=ImgRaw&r=0",
+    "https://th.bing.com/th/id/OIP.wFLl1OwW94svmL7TP76r-wAAAA?w=309&h=499&rs=1&pid=ImgDetMain",
   inWishlist: false,
 };
 

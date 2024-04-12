@@ -14,8 +14,18 @@ export const useBooksStore = defineStore("books", {
     books: books as Book[],
   }),
   actions: {
-    add() {},
+    addToWishList(bookId: number) {
+      const book = this.books.find((book) => book.id === bookId);
+      if (book) {
+        book.inWishlist = true;
+      }
+    },
 
-    finish() {},
+    removeFromWishList(bookId: number) {
+      const book = this.books.find((book) => book.id === bookId);
+      if (book) {
+        book.inWishlist = false;
+      }
+    },
   },
 });
