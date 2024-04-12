@@ -22,8 +22,7 @@ const toWishList = () => router.push('/wishlist');
 const toPurchased = () => router.push('/purchased');
 </script>
 <template>
-    <ion-tabs>
-        <ion-router-outlet></ion-router-outlet>
+    <ion-footer>
         <ion-tab-bar slot="bottom">
             <ion-tab-button tab="home" @click="toHome">
                 <ion-icon :icon="homeIcon" />
@@ -40,5 +39,5 @@ const toPurchased = () => router.push('/purchased');
                 <ion-label>Comprados</ion-label>
             </ion-tab-button>
         </ion-tab-bar>
-    </ion-tabs>
+    </ion-footer>
 </template>
