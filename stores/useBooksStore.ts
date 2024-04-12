@@ -1,4 +1,4 @@
-import { book1, book2, book3 } from "@/fakedata/books";
+import { books } from "@/fakedata/books";
 
 interface Book {
   id: number;
@@ -6,11 +6,12 @@ interface Book {
   author: string;
   rate: number;
   imageURL: string;
+  inWishlist: boolean;
 }
 
 export const useBooksStore = defineStore("books", {
   state: () => ({
-    books: [book1, book2, book3] as Book[],
+    books: books as Book[],
   }),
   actions: {
     add() {},
