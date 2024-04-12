@@ -22,3 +22,9 @@ logs
 .env
 .env.*
 !.env.example
+
+# Android build output
+android
+
+# iOS build output
+ios
