@@ -5,12 +5,11 @@ const BooksStore = useBooksStore();
 const books = BooksStore.books;
 
 const addToWishList = (bookId: number) => {
-    const book = books.find((book) => book.id === bookId)
+    BooksStore.addToWishList(bookId);
+}
 
-    if(!book) return;
-
-    book.inWishlist !== true ? BooksStore.addToWishList(book.id) : BooksStore.removeFromWishList(book.id);
-    
+const removeFromWishList = (bookId: number) => {
+    BooksStore.removeFromWishList(bookId);
 }
 </script>
 <template>
@@ -27,7 +26,8 @@ const addToWishList = (bookId: number) => {
                     <div class="">
                         <h2 class="flex items-center gap-1.5">
                             <span>{{ book.title }} -</span>
-                            <span @click="addToWishList(book.id)" class="flex items-center">
+                            <span @click="book.inWishlist ? removeFromWishList(book.id) : addToWishList(book.id)"
+                                class="flex items-center">
                                 <ion-icon :icon="book.inWishlist ? bookmarks : bookmarkOutline"
                                     class="font-[20px] text-[#3880FF]"></ion-icon>
                             </span>
