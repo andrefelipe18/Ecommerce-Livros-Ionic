@@ -1,75 +1,43 @@
-# Nuxt 3 Minimal Starter
+# Prova Desenvolvimento para Dispositivos Móveis I
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Objetivo
 
-## Setup
+Consultar o arquivo `REQUIREMENTS.md` para mais informações.
 
-Make sure to install the dependencies:
+## Como executar
+
+1. Clone o repositório
 
 ```bash
-# npm
+git clone https://github.com/andrefelipe18/Ecommerce-Livros-Ionic.git Ecommerce-Livros-Ionic
+```
+
+2. Acesse a pasta do projeto
+
+```bash
+cd Ecommerce-Livros-Ionic
+```
+
+3. Instale as dependências
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+4. Execute o projeto
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+5. Acesse o projeto no navegador
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+http://localhost:3000
 ```
 
-Locally preview production build:
+## Tecnologias utilizadas
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Ionic
+- Vue.js
+- Nuxt
