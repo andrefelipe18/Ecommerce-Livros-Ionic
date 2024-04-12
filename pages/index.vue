@@ -24,7 +24,7 @@ const addToWishList = (bookId: number) => {
 
             <ion-list>
                 <ion-item v-for="book in books" :key="book.id">
-                    <div class="    ">
+                    <div class="">
                         <h2 class="flex items-center gap-1.5">
                             <span>{{ book.title }} -</span>
                             <span @click="addToWishList(book.id)" class="flex items-center">
