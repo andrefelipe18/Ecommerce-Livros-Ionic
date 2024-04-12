@@ -4,6 +4,10 @@
 
 Consultar o arquivo `REQUIREMENTS.md` para mais informações.
 
+## Documentação
+
+Acessar a documentação [aqui](https://github.com/andrefelipe18/Ecommerce-Livros-Ionic/tree/master/docs).
+
 ## Como executar
 
 1. Clone o repositório
