@@ -7,6 +7,8 @@ interface Book {
   rate: number;
   imageURL: string;
   inWishlist: boolean;
+  isPurchased: boolean;
+  isFinished: false;
 }
 
 export const useBooksStore = defineStore("books", {
