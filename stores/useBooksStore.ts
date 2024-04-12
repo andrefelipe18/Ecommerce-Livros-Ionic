@@ -28,4 +28,10 @@ export const useBooksStore = defineStore("books", {
       }
     },
   },
+  getters: {
+    getWishListBooks(): Book[]
+    {
+      return this.books.filter((book) => book.inWishlist);
+    },
+  }
 });
